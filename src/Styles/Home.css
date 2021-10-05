@@ -26,6 +26,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+    justify-content: space-between;
 }
 
 .title-container h1 {
@@ -33,20 +34,18 @@ body {
 }
 .title-container h5 {
     font-size: 30px;
-    font-weight: 700;
+    font-weight: normal;
     padding-top: 50px;
     color: #fff;
 }
 .fullstack {
     color: #CD5A69;
-    margin-bottom: 50px;
 }
 .title-container h5 {
     margin-bottom: 50px;
 }
 .info {
     border: none;
-    margin-top: 200px;
     padding: 15px 30px;
     text-decoration: none;
     color: #fff;
@@ -54,25 +53,17 @@ body {
     border-radius: 50px;
     font-size: 25px;
     font-weight: 500;
+    transition: all 0.5s ease;
+}
+.info:hover {
+    background-color: #fff;
+    color: #CD5A69;
+    font-weight: bold;
+    transform: scale(1.1);
 }
 
 .first img {
+    margin-top: 100px;
     width: 700px;
     height: 700px;
-    margin-top: 120px;
-}
-.flecha {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.flecha p{
-    font-size: 28px;
-    font-weight: 500;
-    color: #CD5A69;
-}
-.flecha img {
-    width: 72px;
-    height: 72px;
 }

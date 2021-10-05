@@ -1,6 +1,6 @@
 import React from "react";
 import Caja from "../img/caja.png";
-import flecha from "../img/Flecha.png";
+import { Link } from "react-router-dom";
 import "../Styles/Home.css";
 const Home = () => {
   return (
@@ -15,19 +15,11 @@ const Home = () => {
           <h5>
             <span className="fullstack">FullStack</span> Developer
           </h5>
-          <a href="#" className="info">
+          <Link to="/sobremi" exact className="info">
             Más Información
-          </a>
+          </Link>
         </div>
         <img src={Caja} alt="" />
-      </div>
-      <div className="flecha">
-        <a href="">
-          <p>Deslizar</p>
-        </a>
-        <a href="">
-          <img src={flecha} alt="" />
-        </a>
       </div>
     </div>
   );

@@ -1,5 +1,6 @@
 import React from "react";
 import "../Styles/About.css";
+import { Link } from "react-router-dom";
 import monalisa from "../img/monalisa.png";
 const About = () => {
   return (
@@ -21,9 +22,13 @@ const About = () => {
             remaining essentially unchanged. It was popularised in the 1960s
             with the release of Letraset sheets containing Lorem
           </p>
-          <a href="#" class="btn-link">
+          <Link
+            to={{ pathname: "https://www.linkedin.com/in/joaquínmussi/" }}
+            target="_blank"
+            class="btn-link"
+          >
             Ir a Linkedin
-          </a>
+          </Link>
         </div>
       </div>
     </div>

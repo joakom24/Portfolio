@@ -49,4 +49,11 @@ body {
     font-size: 25px;
     font-weight: 800;
     text-decoration: none;
+    transition: all 0.5s ease;
+}
+.btn-link:hover {
+    background-color: #fff;
+    color: #CD5A69;
+    font-weight: bold;
+    transform: scale(1.1);
 }
