@@ -1,21 +1,29 @@
 import React from "react";
 import "../Styles/Proyectos.css";
+import { Link } from "react-router-dom";
 const Card = (props) => {
   return (
-    <div class="card-complete">
-      <img src={props.img} alt="" />
+    <div className="card-complete">
+      <img src={props.img} alt="img-proyecto" />
       <div className="description">
         <p>{props.description}</p>
       </div>
       <div className="lenguajes">
-        <img src={props.lenguaje1} alt="" />
-        <img src={props.lenguaje2} alt="" />
-        <img src={props.lenguaje3} alt="" />
-        <img src={props.lenguaje4} alt="" />
+        <img src={props.lenguaje1} alt="lenguaje1" />
+        <img src={props.lenguaje2} alt="lenguaje2" />
+        <img src={props.lenguaje3} alt="lenguaje3" />
+        <img src={props.lenguaje4} alt="lenguaje4" />
       </div>
       <div className="botones">
-        <button>{props.link}</button>
-        <button>{props.github}</button>
+        <Link
+          to={{ pathname: "https://www.linkedin.com/in/joaquínmussi/" }}
+          target="_blank"
+        >
+          <button>{props.link}</button>
+        </Link>
+        <Link to={{ pathname: "https://github.com/joakom24" }} target="_blank">
+          <button>{props.github}</button>
+        </Link>
       </div>
     </div>
   );

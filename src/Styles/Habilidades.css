@@ -28,6 +28,7 @@ body {
     color: #CD5A69;
 }
 .habilidades {
+    height: 58vh;
     margin-top: 40px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -35,5 +36,5 @@ body {
     text-align: center;
 }
 .habilidades img {
-    width: 100px;
+    width: 70px;
 }

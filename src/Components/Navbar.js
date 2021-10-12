@@ -5,7 +5,7 @@ import bandera from "../img/bandera.png";
 import logo from "../img/logo.png";
 const Navbar = () => {
   return (
-    <div class="header">
+    <div className="header">
       <ul className="nav-list">
         <li className="nav-item">
           <NavLink to="/home" exact>
@@ -13,33 +13,33 @@ const Navbar = () => {
           </NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to="/" exact>
+          <NavLink exact to="/">
             Inicio
           </NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to="/sobremi" exact>
+          <NavLink exact to="/sobremi">
             Sobre mí
           </NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to="/proyectos" exact>
+          <NavLink exact to="/proyectos">
             Proyectos
           </NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to="/habilidades" exact>
+          <NavLink exact to="/habilidades">
             Habilidades
           </NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to="/contacto" exact>
+          <NavLink exact to="/contacto">
             Contacto
           </NavLink>
         </li>
         <li className="nav-item bandera">
-          <NavLink to="/english" exact>
-            <img src={bandera} alt="" />
+          <NavLink exact to="/english">
+            <img src={bandera} alt="lenguaje-ingles" />
           </NavLink>
         </li>
       </ul>

@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React, { useState, useEffect } from "react";
 import {
   BrowserRouter as Router,
   Route,
@@ -12,21 +12,27 @@ import Proyectos from "./Components/Proyectos.js";
 import Habilidades from "./Components/Habilidades.js";
 import Contacto from "./Components/Contacto.js";
 import Footer from "./Components/Footer.js";
+import { BeatLoader } from "react-spinners";
 function App() {
+  const [isLoaded, setIsLoaded] = useState(false);
+  useEffect(() => {
+    setIsLoaded(true);
+  }, []);
+
   return (
     <Router>
-      <div>
-        <Navbar />
+      <>
+        {isLoaded ? <Navbar /> : <BeatLoader size={72} color="red" loading />}
         <Switch>
           <Route path="/" exact component={Home} />
-          <Route path="/sobremi" component={About} />
-          <Route path="/proyectos" component={Proyectos} />
-          <Route path="/habilidades" component={Habilidades} />
-          <Route path="/contacto" component={Contacto} />
+          <Route path="/sobremi" exact component={About} />
+          <Route path="/proyectos" exact component={Proyectos} />
+          <Route path="/habilidades" exact component={Habilidades} />
+          <Route path="/contacto" exact component={Contacto} />
           <Redirect to="/" />
         </Switch>
         <Footer />
-      </div>
+      </>
     </Router>
   );
 }

@@ -1,10 +1,17 @@
 import React from "react";
+import { motion } from "framer-motion";
 import Caja from "../img/caja.png";
 import { Link } from "react-router-dom";
 import "../Styles/Home.css";
 const Home = () => {
   return (
-    <div className="container">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 1 }}
+      className="container"
+    >
       <div className="first">
         <div className="title-container">
           <h1 className="title">
@@ -21,7 +28,7 @@ const Home = () => {
         </div>
         <img src={Caja} alt="" />
       </div>
-    </div>
+    </motion.div>
   );
 };
 

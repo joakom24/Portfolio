@@ -23,10 +23,10 @@ body {
     font-weight: bold;
 }
 .first {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 72vh;
 }
 
 .title-container h1 {
@@ -59,7 +59,7 @@ body {
     background-color: #fff;
     color: #CD5A69;
     font-weight: bold;
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 .first img {
