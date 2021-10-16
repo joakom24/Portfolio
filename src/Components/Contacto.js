@@ -3,6 +3,7 @@ import emailjs from "emailjs-com";
 import "../Styles/Contacto.css";
 import { useTranslation } from "react-i18next";
 import ReCAPTCHA from "react-google-recaptcha";
+import swal from "sweetalert";
 const Contacto = () => {
   const [t, i18n] = useTranslation("global");
   const onChange = () => {};
@@ -20,10 +21,14 @@ const Contacto = () => {
       )
       .then(
         (result) => {
-          alert("Gracias! Me pondré en contacto contigo lo antes posible! ;)");
+          swal(
+            "Joaquín Mussi:",
+            "Gracias! Me pondré en contacto contigo lo antes posible! ;)",
+            "success"
+          );
         },
         (error) => {
-          alert("No pudimos enviar tu mensaje. :(  Intentalo de nuevo.");
+          swal("No pudimos enviar tu mensaje", "Intentalo de nuevo.", "error");
         }
       );
     form.current.reset();
