@@ -3,7 +3,9 @@ import "../Styles/About.css";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import Pdf from "../docs/Pdf.pdf";
+import { useTranslation } from "react-i18next";
 const About = () => {
+  const [t, i18n] = useTranslation("global");
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -16,7 +18,7 @@ const About = () => {
         <div className="sobre-mi-foto"></div>
         <div className="sobre-mi-texto">
           <h2>
-            Sobre <span className="mi">mí</span>
+            {t("about.Sobre")} <span className="mi">{t("about.mí")}</span>
           </h2>
           <p>
             Tengo 19 años y soy Desarrollador Web FullStack Autodidacta. Me
@@ -32,10 +34,10 @@ const About = () => {
             target="_blank"
             className="btn-link"
           >
-            Ir a Linkedin
+            {t("about.linkedin")}
           </Link>
           <Link to={Pdf} target="_blank" className="btn-link-2">
-            Ver CV
+            {t("about.cv")} CV
           </Link>
         </div>
       </div>

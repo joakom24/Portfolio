@@ -1,11 +1,11 @@
 import React, { useRef } from "react";
 import emailjs from "emailjs-com";
 import "../Styles/Contacto.css";
+import { useTranslation } from "react-i18next";
 import ReCAPTCHA from "react-google-recaptcha";
 const Contacto = () => {
-  const onChange = () => {
-    console.log("jeje2");
-  };
+  const [t, i18n] = useTranslation("global");
+  const onChange = () => {};
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -27,21 +27,22 @@ const Contacto = () => {
         }
       );
     form.current.reset();
+    window.grecaptcha.reset();
   };
-
   return (
     <div className="container">
       <div className="contacto">
         <h5 className="h5">
-          Te gustaría <span className="contac">contactarme</span>?
+          {t("contacto.te-gustaria")}
+          <span className="contac"> {t("contacto.contactarme")}</span>?
         </h5>
         <form ref={form} onSubmit={sendEmail}>
-          <label>Nombre</label>
-          <input type="text" name="user_name" />
+          <label>{t("contacto.nombre")}</label>
+          <input type="text" name="user_name" required />
           <label>Email</label>
-          <input type="email" name="user_email" />
-          <label>Mensaje</label>
-          <textarea name="message" />
+          <input type="email" name="user_email" required />
+          <label>{t("contacto.mensaje")}</label>
+          <textarea name="message" required />
           <div className="recaptcha">
             <ReCAPTCHA
               sitekey="6LeiBMEcAAAAAJ6OxZA98HuH8auq5xSw4z_wwemz"
@@ -49,7 +50,11 @@ const Contacto = () => {
             />
           </div>
           <div className="send">
-            <input type="submit" value="Send" className="btn-contact" />
+            <input
+              type="submit"
+              value={t("contacto.enviar")}
+              className="btn-contact"
+            />
           </div>
         </form>
       </div>

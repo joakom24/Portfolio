@@ -1,40 +1,58 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState, lazy, Suspense } from "react";
 import {
   BrowserRouter as Router,
   Route,
   Redirect,
   Switch,
 } from "react-router-dom";
+import ClipLoader from "react-spinners/ClipLoader";
 import Navbar from "./Components/Navbar.js";
-import Home from "./Components/Home.js";
-import About from "./Components/About.js";
-import Proyectos from "./Components/Proyectos.js";
-import Habilidades from "./Components/Habilidades.js";
-import Contacto from "./Components/Contacto.js";
-import Footer from "./Components/Footer.js";
-import { BeatLoader } from "react-spinners";
-function App() {
-  const [isLoaded, setIsLoaded] = useState(false);
-  useEffect(() => {
-    setIsLoaded(true);
-  }, []);
+import { css } from "@emotion/react";
+const Home = lazy(() => import("./Components/Home.js"));
+const About = lazy(() => import("./Components/About.js"));
+const Proyectos = lazy(() => import("./Components/Proyectos.js"));
+const Habilidades = lazy(() => import("./Components/Habilidades.js"));
+const Contacto = lazy(() => import("./Components/Contacto.js"));
+const Footer = lazy(() => import("./Components/Footer.js"));
 
+function App() {
+  const [loading, setLoading] = useState(false);
+  const override = css`
+    display: flex;
+    margin: 50vh auto;
+  `;
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 8000);
+  }, []);
   return (
     <Router>
-      <>
-        {isLoaded ? <Navbar /> : <BeatLoader size={72} color="red" loading />}
+      <Suspense
+        fallback={
+          <ClipLoader
+            color={"#000"}
+            loading={loading}
+            size={150}
+            css={override}
+          />
+        }
+      >
+        <Navbar />
+
         <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/sobremi" exact component={About} />
-          <Route path="/proyectos" exact component={Proyectos} />
-          <Route path="/habilidades" exact component={Habilidades} />
-          <Route path="/contacto" exact component={Contacto} />
+          <Route exact path="/" component={Home} />
+          <Route exact path="/sobremi" component={About} />
+          <Route exact path="/proyectos" component={Proyectos} />
+          <Route exact path="/habilidades" component={Habilidades} />
+          <Route exact path="/contacto" component={Contacto} />
           <Redirect to="/" />
         </Switch>
+
         <Footer />
-      </>
+      </Suspense>
     </Router>
   );
 }
-
 export default App;

@@ -1,9 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "../Styles/Navbar.css";
-import bandera from "../img/bandera.png";
 import logo from "../img/logo.png";
+import { useTranslation } from "react-i18next";
 const Navbar = () => {
+  const [t, i18n] = useTranslation("global");
+  const [stateIdioma, setStateIdioma] = useState(true);
+  const click = (e) => {
+    e.preventDefault();
+    setStateIdioma(!stateIdioma);
+    stateIdioma ? i18n.changeLanguage("en") : i18n.changeLanguage("es");
+  };
+
   return (
     <div className="header">
       <ul className="nav-list">
@@ -14,32 +22,41 @@ const Navbar = () => {
         </li>
         <li className="nav-item">
           <NavLink exact to="/">
-            Inicio
+            {t("navbar.Inicio")}
           </NavLink>
         </li>
         <li className="nav-item">
           <NavLink exact to="/sobremi">
-            Sobre mí
+            {t("navbar.Sobre-mí")}
           </NavLink>
         </li>
         <li className="nav-item">
           <NavLink exact to="/proyectos">
-            Proyectos
+            {t("navbar.Proyectos")}
           </NavLink>
         </li>
         <li className="nav-item">
           <NavLink exact to="/habilidades">
-            Habilidades
+            {t("navbar.Habilidades")}
           </NavLink>
         </li>
         <li className="nav-item">
           <NavLink exact to="/contacto">
-            Contacto
+            {t("navbar.Contacto")}
           </NavLink>
         </li>
         <li className="nav-item bandera">
           <NavLink exact to="/english">
-            <img src={bandera} alt="lenguaje-ingles" />
+            <img
+              src={
+                stateIdioma
+                  ? require("../img/bandera.png")
+                  : require("../img/bandera2.png")
+              }
+              alt="lenguaje-ingles"
+              onClick={click}
+              id="img-idioma"
+            />
           </NavLink>
         </li>
       </ul>

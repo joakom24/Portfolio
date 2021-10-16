@@ -21,7 +21,9 @@ import Laravel from "../img/laravel.png";
 import AdobeXD from "../img/adobe.png";
 import VS from "../img/vs.png";
 import Terminal from "../img/terminal.png";
+import { useTranslation } from "react-i18next";
 const Habilidades = () => {
+  const [t, i18n] = useTranslation("global");
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -32,7 +34,8 @@ const Habilidades = () => {
     >
       <div className="habilidades-title">
         <h1>
-          Habi<span className="lidades">lidades</span>
+          {t("habilidad.titulo")}
+          <span className="lidades">{t("habilidad.titulo2")}</span>
         </h1>
       </div>
       <div className="habilidades">
