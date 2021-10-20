@@ -1,0 +1,47 @@
+@media screen and (max-width: 1700px) {
+    .container {
+        margin: 0 50px;
+    }
+    .proyectos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: 210vh;
+        margin-top: 50px;
+    }
+    .card img {
+        width: 700px;
+        height: 100%;
+    }
+}
+@media screen and (max-width: 750px) {
+    .container {
+        margin: 0 30px;
+    }
+    .card img {
+        width: 500px;    
+    }
+}
+@media screen and (max-width: 550px) {
+    .container {
+        margin: 0 30px;
+    }
+    .card img{
+        width: 350px;
+    }
+    .description p {
+        font-size: 16px;
+        max-width: 300px;
+    }
+    .lenguajes img {
+        max-width: 50px;
+    }
+    .botones {
+        margin-top:20px;
+        flex-direction: column;
+    }
+    .botones button{
+        margin: 10px;
+        padding: 7px 10px;
+    }
+}

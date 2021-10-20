@@ -1,0 +1,44 @@
+@media screen and (max-width: 1400px) {
+    .container {
+        margin: 0 50px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        margin: 0 30px;
+    }
+    .first h1{
+        font-size: 32px;
+    }
+    .first h5 {
+        font-size: 24px;
+    }
+    .first img {
+        width: 500px;
+        height: 500px;
+    }
+    .info {
+        font-size: 20px;
+        padding: 10px 24px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .first {
+        display: flex;
+        flex-wrap: wrap;
+        height: 80vh;
+        justify-content: center;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .first {
+        height: 70vh;
+    }
+    .first img {
+        width: 400px;
+        height: 400px;
+    }
+}

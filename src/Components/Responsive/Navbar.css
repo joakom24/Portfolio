@@ -1,0 +1,44 @@
+@media screen and (max-width : 1024px) {
+    .nav-item a {
+        font-size: 18px;
+    }
+    #img-idioma {
+        margin-top: 5px;
+        width: 32px;
+        height: 32px;
+        
+    }
+    .nav-item:first-child  img{
+        margin-top: 10px;
+        width: 53px;
+        height: 42px;
+    }
+}
+
+@media  screen and (max-width: 768px) {
+        .header {
+            position: relative;
+            justify-content:space-between;
+        }
+        
+       .nav-list {
+            display: flex;
+            flex-direction: column;
+            background-color: #092c42;
+            height:600px;
+            position: absolute;
+            top: 80px;
+            width: 100%;
+            transition: all .5s ease;
+            opacity: 1;
+
+       } 
+       .bars-cont {
+           display: block;
+           margin: 50px 20px 0 0;
+       }
+       .nav-item a {
+           font-size: 26px;
+           
+       }
+}

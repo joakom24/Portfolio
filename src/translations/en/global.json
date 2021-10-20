@@ -1,0 +1,39 @@
+{
+    "home" : {
+        "Hola," :"Hi,",
+        "soy-Joaquín-Mussi" :  "I'm Joaquín Mussi",
+        "Desarrollador-Web": "Developer",
+        "Fullstack" : " Fullstack",
+        "Más-Información" : "More Information"
+    },
+    "navbar" : {
+        "Inicio" : "Home",
+        "Sobre-mí": "About me",
+        "Proyectos" : "Projects",
+        "Habilidades" : "Skills",
+        "Contacto" : "Contact"
+    },
+    "about" : {
+        "Sobre" : "About",
+        "mí" : "me",
+        "p" : "I'm nineteen years old and I'm FullStack Developer self-taught. I stand out in that what I don't know, I learn. My passion by the technology, It took me to be Computer Technician and I study web development self-taught, I studied Systems Engineering( from 2020 to 2021) but I decided don´t follow the carrer for to study on my own. Football lover and the programming. I stand out for being a person who learns very quickly and for being proactive.  ",
+        "cv": "View",
+        "linkedin" : "Go to Linkedin"
+    },
+    "contacto" : {
+        "te-gustaria": "Do you like",
+        "contactarme": "contact me",
+        "nombre" :"Name",
+        "mensaje":"Message",
+        "enviar":"Send"
+    },
+    "footer" : {
+        "frase": "What I don't know, I learn",
+        "hecho" : "©2021 Joaquín Mussi. Done with ReactJs"
+    },
+    "habilidad" : {
+        "titulo" : "Ski",
+        "titulo2" : "lls"
+    }
+
+}

@@ -1,0 +1,26 @@
+@media  screen and (max-width: 1050px) {
+    .container {
+        margin: 0 40px;
+    }
+    .h5 {
+        font-size: 35px;
+    }
+}
+@media  screen and (max-width : 768px) {
+    .container {
+        margin: 0 40px;
+    }
+    .h5 {
+        font-size: 35px;
+        
+    }
+    form {
+        width: 400px;
+    }
+    textarea {
+        max-height: 200px;
+        min-height: 100px;
+        max-width: 400px;
+        min-width: 400px;
+    }
+}
