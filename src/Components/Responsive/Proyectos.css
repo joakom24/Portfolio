@@ -1,33 +1,36 @@
 @media screen and (max-width: 1700px) {
     .container {
         margin: 0 50px;
+        height: 150vh!important;
     }
     .proyectos {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        height: 210vh;
-        margin-top: 50px;
+        height: 140vh;
+        
     }
-    .card img {
-        width: 700px;
-        height: 100%;
-    }
+    
+   
 }
-@media screen and (max-width: 750px) {
+
+@media screen and (max-width: 999px) {
     .container {
         margin: 0 30px;
+        height: 230vh!important;
     }
-    .card img {
-        width: 500px;    
+    .proyectos {
+        height: 250vh;
     }
+   
 }
 @media screen and (max-width: 550px) {
     .container {
         margin: 0 30px;
+        height: 220vh!important;
     }
-    .card img{
-        width: 350px;
+    .proyectos {
+        height: 250vh;
     }
     .description p {
         font-size: 16px;

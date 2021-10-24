@@ -34,9 +34,8 @@ const Proyectos = () => {
       </div>
       <div className="proyectos">
         <div className="proyectos-cards">
-          <div className="card">
+          <div className="card1">
             <Card
-              img={Monos}
               description="Página web creada con el fin de informar sobre la vida e historia de los Monos.
               "
               lenguaje1={Html}
@@ -49,7 +48,7 @@ const Proyectos = () => {
           </div>
         </div>
         <div className="proyectos-cards">
-          <div className="card">
+          <div className="card2">
             <Card
               img={Google}
               description="Página web creada con el fin de informar sobre la vida e historia de los Monos.
@@ -64,7 +63,7 @@ const Proyectos = () => {
           </div>
         </div>
         <div className="proyectos-cards">
-          <div className="card">
+          <div className="card3">
             <Card
               img={Speed}
               description="Página web creada con el fin de informar sobre la vida e historia de los Monos.

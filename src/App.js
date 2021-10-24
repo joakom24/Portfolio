@@ -32,7 +32,7 @@ function App() {
       <Suspense
         fallback={
           <ClipLoader
-            color={"#000"}
+            color={"#CD5A69"}
             loading={loading}
             size={150}
             css={override}

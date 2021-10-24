@@ -17,12 +17,16 @@ const Home = () => {
     >
       <div className="first">
         <div className="title-container">
-          <h1 className="title">
+          <motion.h1
+            animate={{ x: 0 }}
+            transition={{ ease: "easeOut", duration: 2 }}
+            className="title"
+          >
             <span className="h1">&lt;h1&gt;</span>
             {t("home.Hola,")} <br />
             {t("home.soy-Joaquín-Mussi")}
             <span className="h1">&lt;/h1&gt;</span>
-          </h1>
+          </motion.h1>
           <h5>
             <span className="fullstack">{t("home.Desarrollador-Web")}</span>
             {t("home.Fullstack")}

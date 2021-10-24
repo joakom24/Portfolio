@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 const Card = (props) => {
   return (
     <div className="card-complete">
-      <img src={props.img} alt="img-proyecto" />
       <div className="description">
         <p>{props.description}</p>
       </div>

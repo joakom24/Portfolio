@@ -40,25 +40,45 @@ const Habilidades = () => {
         </h1>
       </div>
       <div className="habilidades">
-        <Habilidad img={Html} />
-        <Habilidad img={Css} />
-        <Habilidad img={Js} />
-        <Habilidad img={Reactlogo} />
-        <Habilidad img={Firebase} />
-        <Habilidad img={Node} />
-        <Habilidad img={Boots} />
-        <Habilidad img={Python} />
-        <Habilidad img={Mysql} />
-        <Habilidad img={Express} />
-        <Habilidad img={Mongo} />
-        <Habilidad img={Npm} />
-        <Habilidad img={Git} />
-        <Habilidad img={Github} />
-        <Habilidad img={Php} />
-        <Habilidad img={Laravel} />
-        <Habilidad img={AdobeXD} />
-        <Habilidad img={VS} />
-        <Habilidad img={Terminal} />
+        <div className="front">
+          <h3>Front-end</h3>
+          <div className="front-img">
+            <Habilidad img={Html} />
+            <Habilidad img={Css} />
+            <Habilidad img={Js} />
+            <Habilidad img={Reactlogo} />
+            <Habilidad img={Boots} />
+          </div>
+        </div>
+        <div className="back">
+          <h3>Back-end</h3>
+          <div className="back-img">
+            <Habilidad img={Node} />
+            <Habilidad img={Express} />
+            <Habilidad img={Php} />
+            <Habilidad img={Laravel} />
+            <Habilidad img={Python} />
+          </div>
+        </div>
+        <div className="base">
+          <h3>Base de datos</h3>
+          <div className="base-img">
+            <Habilidad img={Mongo} />
+            <Habilidad img={Firebase} />
+            <Habilidad img={Mysql} />
+          </div>
+        </div>
+        <div className="otros">
+          <h3>Otros</h3>
+          <div className="otros-img">
+            <Habilidad img={Npm} />
+            <Habilidad img={Git} />
+            <Habilidad img={Github} />
+            <Habilidad img={AdobeXD} />
+            <Habilidad img={VS} />
+            <Habilidad img={Terminal} />
+          </div>
+        </div>
       </div>
     </motion.div>
   );

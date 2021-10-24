@@ -1,11 +1,66 @@
-@media  screen and (max-width: 768px)  {
+@media  screen and (max-width: 1700px){
     .container {
-        margin: 0 40px;
-        height: 50vh;
+        height: 80vh;
+    }
+    h3{
+        font-size: 20px;
+    }
+}
+@media  screen and (max-width: 1300px) {
+    .container {
+        height: 80vh;
+    }
+    h3{
+        font-size: 20px;
     }
 }
 @media  screen and (max-width: 1024px) {
     .container {
-        margin: 0 40px;
+        margin: 0 40px!important;
+        height: 80vh;
+    }
+    h3{
+        font-size: 20px;
+        margin-right: 30px;
+    }
+    img {
+        margin-right: 20px;
+    }
+    .otros-img {
+        margin-left: 10vw;
+    }
+    
+}
+
+@media  screen and (max-width: 764px) {
+
+    .habilidades {
+        flex-direction: column;
+    }
+    .front-img, .back-img, .base-img, .otros-img {
+        display: flex;
+        
+    }
+    .front-img, .back-img {
+        margin-left: 10vw;
+    }
+    .base-img {
+        margin-left: 15vw;
+    }
+    h3 {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    .otros-img {
+        margin-left:5vw;
     }
 }
+@media  screen and (max-width: 620px) {
+    img {
+        width: 45px!important;
+    }
+}
+
+
+

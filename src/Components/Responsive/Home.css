@@ -19,10 +19,12 @@
         height: 500px;
     }
     .info {
-        font-size: 20px;
+        font-size: 15px;
         padding: 10px 24px;
     }
 }
+
+
 @media screen and (max-width: 900px) {
     .first {
         display: flex;
@@ -40,5 +42,19 @@
     .first img {
         width: 400px;
         height: 400px;
+    }
+    .info {
+        font-size: 16px;
+        padding: 7px 20px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .info {
+        font-size: 16px;
+        padding: 7px 20px;
+    }
+    .first img {
+        width: 230px;
+        height: 230px;
     }
 }
