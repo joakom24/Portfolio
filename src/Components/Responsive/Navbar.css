@@ -37,6 +37,9 @@
            display: block;
            margin: 50px 20px 0 0;
        }
+       .logo {
+            margin: 30px 20px;
+       }
        .nav-item a {
            font-size: 26px;
            

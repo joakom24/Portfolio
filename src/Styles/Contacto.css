@@ -10,7 +10,7 @@ a {
 }
 .container {
     margin: 0 200px;
-    height: 70vh;
+    height: 100%;
 }
 body {
     background-color: #19303f;

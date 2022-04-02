@@ -13,7 +13,6 @@ const About = lazy(() => import("./Components/About.js"));
 const Proyectos = lazy(() => import("./Components/Proyectos.js"));
 const Habilidades = lazy(() => import("./Components/Habilidades.js"));
 const Contacto = lazy(() => import("./Components/Contacto.js"));
-const Footer = lazy(() => import("./Components/Footer.js"));
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -49,8 +48,6 @@ function App() {
           <Route exact path="/contacto" component={Contacto} />
           <Redirect to="/" />
         </Switch>
-
-        <Footer />
       </Suspense>
     </Router>
   );

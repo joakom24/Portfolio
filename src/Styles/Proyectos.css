@@ -33,7 +33,7 @@ body {
     grid-template-columns:repeat(3, 1fr);
     grid-gap: 20px;
     grid-template-rows: 500px;
-    height: 70vh;
+    height: 100vh;
 }
 
 .description {
@@ -66,22 +66,22 @@ body {
     background-position: bottom;
 }
 .card2 {
-    background-image: url('../img/speed.png');
+    background-image: url('../img/google.png');
+    background-position-x: left;
     background-size: cover;
-    background-position: top;
     transition: ease-in-out 3s;
 }
 .card2:hover {
-    background-position: bottom;
+    background-position: right;
 }
 .card3 {
-    background-image: url('../img/google.png');
+    background-image: url('../img/reactchakra.png');
     background-size: cover;
-    background-position: top;
+    background-position: center;
     transition: ease-in-out 3s;
 }
 .card3:hover {
-    background-position: bottom;
+    background-position: right;
 }
 .lenguajes {
     display: flex;
@@ -101,7 +101,9 @@ body {
     align-items: center;
     justify-content: center;
 }
-
+.card1 .botones {
+    margin: 10px;
+}
 .botones button {
     margin: 40px 10px ;
     width: 200px;
@@ -122,3 +124,4 @@ button:hover {
     font-weight: bold;
     transform: scale(1.1);
 }
+

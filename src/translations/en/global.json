@@ -16,7 +16,7 @@
     "about" : {
         "Sobre" : "About",
         "mí" : "me",
-        "p" : "I'm nineteen years old and I'm FullStack Developer self-taught. I stand out in that what I don't know, I learn. My passion by the technology, It took me to be Computer Technician and I study web development self-taught, I studied Systems Engineering( from 2020 to 2021) but I decided don´t follow the carrer for to study on my own. Football lover and the programming. I stand out for being a person who learns very quickly and for being proactive.  ",
+        "p" : "I'm nineteen years old and I'm FullStack Developer self-taught. I am a person that if there is something that he does not know, he learns it. My passion by the technology, It took me to be Computer Technician and I study web development self-taught, I studied Systems Engineering( from 2020 to 2021) but I decided don´t follow the carrer for to study on my own. Football lover and the programming. I stand out for being a person who learns very quickly and for being proactive.  ",
         "cv": "View",
         "linkedin" : "Go to Linkedin"
     },
@@ -27,13 +27,20 @@
         "mensaje":"Message",
         "enviar":"Send"
     },
-    "footer" : {
-        "frase": "What I don't know, I learn",
-        "hecho" : "©2021 Joaquín Mussi. Done with ReactJs"
+    "proyectos": {
+        "titulo1": "Pro",
+        "titulo2": "jects",
+        "descripcion3": "Weather Web App consuming the Open Weather App API",
+        "descripcion2": "Website created in order to inform about the life and history of the Monkeys.",
+        "descripcion4": "Web application to manage shifts with LocalStorage",
+        "pagina": "Go to page",
+        "git" : "Go to GitHub"
     },
     "habilidad" : {
         "titulo" : "Ski",
-        "titulo2" : "lls"
+        "titulo2" : "lls",
+        "titulo3" : "Data bases",
+        "titulo4": "Other"
     }
 
 }

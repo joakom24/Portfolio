@@ -35,7 +35,7 @@ const Home = () => {
             {t("home.Más-Información")}
           </Link>
         </div>
-        <img src={Caja} alt="Caja-fullstack" />
+        <img src={Caja} alt="Caja-fullstack" class="box-img" />
       </div>
     </motion.div>
   );

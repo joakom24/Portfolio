@@ -15,7 +15,10 @@ const Navbar = () => {
     setStateIdioma(!stateIdioma);
     stateIdioma ? i18n.changeLanguage("en") : i18n.changeLanguage("es");
   };
-
+  const style = (e) => {
+    e.preventDefault();
+    setOpen(false);
+  };
   return (
     <div className="header">
       <li className="nav-item logo">
@@ -27,32 +30,32 @@ const Navbar = () => {
         className="nav-list"
         style={open ? { left: "0px" } : { left: "-100%" }}
       >
-        <li className="nav-item">
+        <li className="nav-item" onClick={style}>
           <NavLink exact to="/">
             {t("navbar.Inicio")}
           </NavLink>
         </li>
-        <li className="nav-item">
+        <li className="nav-item" onClick={style}>
           <NavLink exact to="/sobremi">
             {t("navbar.Sobre-mí")}
           </NavLink>
         </li>
-        <li className="nav-item">
+        <li className="nav-item" onClick={style}>
           <NavLink exact to="/proyectos">
             {t("navbar.Proyectos")}
           </NavLink>
         </li>
-        <li className="nav-item">
+        <li className="nav-item" onClick={style}>
           <NavLink exact to="/habilidades">
             {t("navbar.Habilidades")}
           </NavLink>
         </li>
-        <li className="nav-item">
+        <li className="nav-item" onClick={style}>
           <NavLink exact to="/contacto">
             {t("navbar.Contacto")}
           </NavLink>
         </li>
-        <li className="nav-item bandera">
+        <li className="nav-item bandera" onClick={style}>
           <NavLink exact to="/english">
             <img
               src={

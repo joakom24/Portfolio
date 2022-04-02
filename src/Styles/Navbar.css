@@ -16,10 +16,12 @@
     margin: 10px 0;
     align-items: center;
     min-width: 90%;
+    z-index: 999;
 }
 .nav-item {
     list-style: none;
 }
+
 .bars-cont {
     display: flex;
     width: 30px;
@@ -51,6 +53,10 @@
     text-decoration: none;
     font-size: 26px;
     color: #CD5A69;
+}
+.nav-item a:hover {
+    color: #fff;
+    border-bottom: 2px solid #CD5A69;
 }
 .active {
     color: #fff!important;

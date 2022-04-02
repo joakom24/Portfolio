@@ -1,12 +1,13 @@
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1440px) {
     .container {
-        margin: 0 50px;
+        margin: 100px 50px;
     }
 }
 
 @media screen and (max-width: 1200px) {
     .container {
         margin: 0 30px;
+        height: 80vh!important;
     }
     .first h1{
         font-size: 32px;
@@ -26,6 +27,10 @@
 
 
 @media screen and (max-width: 900px) {
+    .container {
+        height: 90vh!important;
+
+    }
     .first {
         display: flex;
         flex-wrap: wrap;
@@ -48,13 +53,27 @@
         padding: 7px 20px;
     }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 425px) {
+    .container {
+        height:120vh!important;
+
+    }
+    .first {
+        height: 50vh;
+    }
     .info {
         font-size: 16px;
         padding: 7px 20px;
     }
-    .first img {
-        width: 230px;
-        height: 230px;
+    .box-img {
+        width: 300px!important;
+        height: 300px!important;
+    }
+}
+@media screen and (max-width:319px){
+
+    .box-img {
+        width: 300px!important;
+        height: 300px!important;
     }
 }

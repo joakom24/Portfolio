@@ -1,24 +1,20 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Monos from "../img/monos.png";
 import Html from "../img/Card/html-5.png";
 import Css from "../img/Card/css-3.png";
 import Js from "../img/Card/js.png";
-import Reactlogo from "../img/react.png";
-import Firebase from "../img/firebase.png";
-import Node from "../img/node.png";
-import Express from "../img/express.png";
+import Reactlogo from "../img/react2.png";
+import mlogo from "../img/mlogo.png";
+import chakra from "../img/Card/chakra.png";
+//import Node from "../img/node.png";
+//import Express from "../img/express.png";
 import Bootstrap from "../img/Card/boot.png";
 import Card from "../Components/Card.js";
-import Mongo from "../img/mongo.png";
-import Laravel from "../img/laravel.png";
-import Php from "../img/PHP.png";
-import Mysql from "../img/mysql-logo.png";
-import Google from "../img/google.png";
-import Speed from "../img/speed.png";
 import "../Styles/Proyectos.css";
 import "./Responsive/Proyectos.css";
+import { useTranslation } from "react-i18next";
 const Proyectos = () => {
+  const [t, i18n] = useTranslation("global");
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -29,51 +25,49 @@ const Proyectos = () => {
     >
       <div className="proyectos-title">
         <h1>
-          <span className="pro">Pro</span>yectos
+          <span className="pro">{t("proyectos.titulo1")}</span>
+          {t("proyectos.titulo2")}
         </h1>
       </div>
       <div className="proyectos">
         <div className="proyectos-cards">
           <div className="card1">
             <Card
-              description="Página web creada con el fin de informar sobre la vida e historia de los Monos.
-              "
+              description={t("proyectos.descripcion2")}
               lenguaje1={Html}
               lenguaje2={Css}
               lenguaje3={Js}
+              to={"https://monolandia-7816e.web.app/"}
               lenguaje4={Bootstrap}
-              link="Ir a la página"
-              github="Ir al Github"
+              link={t("proyectos.pagina")}
+              github={t("proyectos.git")}
+              git={"https://github.com/joakom24/MonoLandia"}
             />
           </div>
         </div>
         <div className="proyectos-cards">
           <div className="card2">
             <Card
-              img={Google}
-              description="Página web creada con el fin de informar sobre la vida e historia de los Monos.
-              "
+              description={t("proyectos.descripcion3")}
               lenguaje1={Reactlogo}
-              lenguaje2={Node}
-              lenguaje3={Express}
-              lenguaje4={Firebase}
-              link="Ir a la página"
-              github="Ir al Github"
+              lenguaje2={mlogo}
+              git={"https://github.com/joakom24/ClimaReactAPI"}
+              to={"https://reactappweather-7c1cb.web.app/"}
+              link={t("proyectos.pagina")}
+              github={t("proyectos.git")}
             />
           </div>
         </div>
         <div className="proyectos-cards">
           <div className="card3">
             <Card
-              img={Speed}
-              description="Página web creada con el fin de informar sobre la vida e historia de los Monos.
-              "
-              lenguaje1={Mongo}
-              lenguaje2={Laravel}
-              lenguaje3={Mysql}
-              lenguaje4={Php}
-              link="Ir a la página"
-              github="Ir al Github"
+              description={t("proyectos.descripcion4")}
+              lenguaje1={Reactlogo}
+              lenguaje2={chakra}
+              git={"https://github.com/joakom24/Petinder"}
+              to={"https://petinder-75b0e.web.app"}
+              link={t("proyectos.pagina")}
+              github={t("proyectos.git")}
             />
           </div>
         </div>

@@ -1,6 +1,6 @@
 @media  screen and (max-width: 1700px){
     .container {
-        height: 80vh;
+        height: 100vh!important;
     }
     h3{
         font-size: 20px;
@@ -19,9 +19,8 @@
         margin: 0 40px!important;
         height: 80vh;
     }
-    h3{
+    .otros h3{
         font-size: 20px;
-        margin-right: 30px;
     }
     img {
         margin-right: 20px;
@@ -32,35 +31,25 @@
     
 }
 
-@media  screen and (max-width: 764px) {
-
-    .habilidades {
-        flex-direction: column;
-    }
-    .front-img, .back-img, .base-img, .otros-img {
-        display: flex;
-        
-    }
-    .front-img, .back-img {
-        margin-left: 10vw;
-    }
-    .base-img {
-        margin-left: 15vw;
-    }
-    h3 {
-        margin-top: 20px;
-        display: flex;
-        justify-content: center;
-    }
-    .otros-img {
-        margin-left:5vw;
-    }
+@media  screen and  (max-width: 768px) {
+.container{
+    height: 310vh!important;
 }
-@media  screen and (max-width: 620px) {
-    img {
-        width: 45px!important;
-    }
+h3 {
+    font-size: 19px;
+}
+.habilidades {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.otros {
+    margin: 0 80px 0 0 ;
+}
+.otros h3 {
+    margin-left: 20px;
 }
 
+}
 
 

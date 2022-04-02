@@ -16,8 +16,6 @@ import Mongo from "../img/mongo2.png";
 import Npm from "../img/npm.png";
 import Git from "../img/git.png";
 import Github from "../img/github.png";
-import Php from "../img/PHP.png";
-import Laravel from "../img/laravel.png";
 import AdobeXD from "../img/adobe.png";
 import VS from "../img/vs.png";
 import Terminal from "../img/terminal.png";
@@ -55,13 +53,11 @@ const Habilidades = () => {
           <div className="back-img">
             <Habilidad img={Node} />
             <Habilidad img={Express} />
-            <Habilidad img={Php} />
-            <Habilidad img={Laravel} />
             <Habilidad img={Python} />
           </div>
         </div>
         <div className="base">
-          <h3>Base de datos</h3>
+          <h3>{t("habilidad.titulo3")}</h3>
           <div className="base-img">
             <Habilidad img={Mongo} />
             <Habilidad img={Firebase} />
@@ -69,7 +65,7 @@ const Habilidades = () => {
           </div>
         </div>
         <div className="otros">
-          <h3>Otros</h3>
+          <h3>{t("habilidad.titulo4")}</h3>
           <div className="otros-img">
             <Habilidad img={Npm} />
             <Habilidad img={Git} />

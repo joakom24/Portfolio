@@ -16,9 +16,18 @@
     "about" : {
         "Sobre" : "Sobre",
         "mí" : "mí",
-        "p" : "Tengo 19 años y soy Desarrollador Web FullStack Autodidacta. Me destaco en que lo que no sé, lo aprendo. Mi pasión por la tecnología me llevo a ser Técnico informático y a estudiar desarrollo web de forma autodidacta, estudié Ingeniería en Sistemas (2020-2021) pero decidí no seguir la carrera para estudiar por mi cuenta. Amante del fútbol y la programación. Me destaco por ser una persona que aprende muy rápido y por ser proactivo.",
+        "p" : "Tengo 20 años y soy Desarrollador Web FullStack Autodidacta. Soy una persona que si hay algo que no sabe, lo aprende. Mi pasión por la tecnología me llevo a ser Técnico informático y a estudiar desarrollo web de forma autodidacta, estudié Ingeniería en Sistemas (2020-2021) pero decidí no seguir la carrera para estudiar por mi cuenta. Amante del fútbol y la programación. Me destaco por ser una persona que aprende muy rápido y por ser proactivo.",
         "cv": "Ver",
         "linkedin" : "Ir a Linkedin"
+    },
+    "proyectos": {
+        "titulo1": "Pro",
+        "titulo2": "yectos",
+        "descripcion3": "Aplicación web del clima consumiendo la API de Open Weather App",
+        "descripcion2": "Página web creada con el fin de informar sobre la vida e historia de los Monos.",
+        "descripcion4": "Aplicación web para gestionar turnos usando LocalStorage",
+        "pagina": "Ir a la página",
+        "git" : "Ir a GitHub"
     },
     "contacto" : {
         "te-gustaria": "Te gustaría",
@@ -27,12 +36,10 @@
         "mensaje":"Mensaje",
         "enviar":"Enviar"
     },
-    "footer" : {
-        "frase": "Lo que no sé, lo aprendo",
-        "hecho" : "©2021 Joaquín Mussi. Hecho con ReactJs"
-    },
     "habilidad" : {
         "titulo" : "Habi",
-        "titulo2" : "lidades"
+        "titulo2" : "lidades",
+        "titulo3" : "Base de datos",
+        "titulo4": "Otros"
     }
 }
