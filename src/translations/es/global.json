@@ -26,6 +26,7 @@
         "descripcion3": "Aplicación web del clima consumiendo la API de Open Weather App",
         "descripcion2": "Página web creada con el fin de informar sobre la vida e historia de los Monos.",
         "descripcion4": "Aplicación web para gestionar turnos usando LocalStorage",
+        "descripcion5": "Bot de prueba de discord",
         "pagina": "Ir a la página",
         "git" : "Ir a GitHub"
     },

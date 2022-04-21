@@ -22,7 +22,7 @@ const Navbar = () => {
   return (
     <div className="header">
       <ul>
-        <li className="nav-item logo">
+        <li className="nav-logo">
           <NavLink to="/home" exact>
             <img src={logo} alt="logo" class="Logo" />
           </NavLink>

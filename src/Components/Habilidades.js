@@ -1,15 +1,15 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "../Styles/Habilidades.css";
-import MaterialUi from "../img/mateui.png"
-import Mate from "../img/mate.png"
-import Chakra from "../img/chakra.png"
-import Sass from "../img/sass.png"
-import Styled from "../img/styled.png"
-import Tailwind from "../img/tailwind.png"
+import MaterialUi from "../img/mateui.png";
+import Mate from "../img/mate.png";
+import Chakra from "../img/chakra.png";
+import Sass from "../img/sass.png";
+import Styled from "../img/styled.png";
+import Tailwind from "../img/tailwind.png";
 import Next from "../img/next.png";
 import Habilidad from "../Components/Habilidad";
-import Jwt from "../img/jwt.png"
+import Jwt from "../img/jwt.png";
 import Html from "../img/html2.png";
 import Css from "../img/css2.png";
 import Js from "../img/js2.png";
@@ -25,6 +25,8 @@ import Npm from "../img/npm.png";
 import Git from "../img/git.png";
 import Github from "../img/github.png";
 import AdobeXD from "../img/adobe.png";
+import Heroku from "../img/heroku.png";
+import Discord from "../img/ds.png";
 import VS from "../img/vs.png";
 import Terminal from "../img/terminal.png";
 import { useTranslation } from "react-i18next";
@@ -61,7 +63,6 @@ const Habilidades = () => {
             <Habilidad img={Boots} />
             <Habilidad img={Styled} />
             <Habilidad img={Sass} />
-           
           </div>
         </div>
         <div className="back">
@@ -71,6 +72,7 @@ const Habilidades = () => {
             <Habilidad img={Express} />
             <Habilidad img={Python} />
             <Habilidad img={Jwt} />
+            <Habilidad img={Discord} />
           </div>
         </div>
         <div className="base">
@@ -79,6 +81,7 @@ const Habilidades = () => {
             <Habilidad img={Mongo} />
             <Habilidad img={Firebase} />
             <Habilidad img={Mysql} />
+            <Habilidad img={Heroku} />
           </div>
         </div>
         <div className="otros">

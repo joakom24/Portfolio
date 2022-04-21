@@ -34,11 +34,12 @@
      margin-left: 10px;
      cursor: pointer;
  }
-.nav-item:first-child  img{
+.nav-logo:first-child  img{
     width: 63px;
     margin-top: 20px;
     height: 52px;
 }
+
 .nav-list .bandera {
     width: 42px;
     height: 42px;

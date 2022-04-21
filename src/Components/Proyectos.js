@@ -3,11 +3,13 @@ import { motion } from "framer-motion";
 import Html from "../img/Card/html-5.png";
 import Css from "../img/Card/css-3.png";
 import Js from "../img/Card/js.png";
+import ds from "../img/ds.png";
 import Reactlogo from "../img/react2.png";
 import mlogo from "../img/mlogo.png";
 import chakra from "../img/Card/chakra.png";
-//import Node from "../img/node.png";
-//import Express from "../img/express.png";
+import Node from "../img/node2.png";
+import Express from "../img/express.png";
+import heroku from "../img/heroku.png";
 import Bootstrap from "../img/Card/boot.png";
 import Card from "../Components/Card.js";
 import "../Styles/Proyectos.css";
@@ -68,6 +70,21 @@ const Proyectos = () => {
               to={"https://petinder-75b0e.web.app"}
               link={t("proyectos.pagina")}
               github={t("proyectos.git")}
+            />
+          </div>
+        </div>
+        <div className="proyectos-cards">
+          <div className="card4">
+            <Card
+              description={t("proyectos.descripcion5")}
+              lenguaje1={Node}
+              lenguaje2={Express}
+              lenguaje3={ds}
+              lenguaje4={heroku}
+              git={"https://github.com/joakom24/LeitoMessiBot"}
+              github={t("proyectos.git")}
+              link={t("proyectos.pagina")}
+              to={"https://github.com/joakom24/LeitoMessiBot"}
             />
           </div>
         </div>
