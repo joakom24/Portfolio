@@ -20,7 +20,12 @@ h3 {
     font-size: 27px;
 }
 .front, .back , .base {
-    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.front-img, .back-img , .base-img{
+    display: flex;
 }
 .habilidades-title {
     color: #fff;

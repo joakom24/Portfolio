@@ -21,11 +21,13 @@ const Navbar = () => {
   };
   return (
     <div className="header">
-      <li className="nav-item logo">
-        <NavLink to="/home" exact>
-          <img src={logo} alt="logo" class="Logo" />
-        </NavLink>
-      </li>
+      <ul>
+        <li className="nav-item logo">
+          <NavLink to="/home" exact>
+            <img src={logo} alt="logo" class="Logo" />
+          </NavLink>
+        </li>
+      </ul>
       <ul
         className="nav-list"
         style={open ? { left: "0px" } : { left: "-100%" }}
