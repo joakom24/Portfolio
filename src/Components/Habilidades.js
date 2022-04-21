@@ -1,7 +1,15 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "../Styles/Habilidades.css";
+import MaterialUi from "../img/mateui.png"
+import Mate from "../img/mate.png"
+import Chakra from "../img/chakra.png"
+import Sass from "../img/sass.png"
+import Styled from "../img/styled.png"
+import Tailwind from "../img/tailwind.png"
+import Next from "../img/next.png";
 import Habilidad from "../Components/Habilidad";
+import Jwt from "../img/jwt.png"
 import Html from "../img/html2.png";
 import Css from "../img/css2.png";
 import Js from "../img/js2.png";
@@ -45,7 +53,15 @@ const Habilidades = () => {
             <Habilidad img={Css} />
             <Habilidad img={Js} />
             <Habilidad img={Reactlogo} />
+            <Habilidad img={Next} />
+            <Habilidad img={Chakra} />
+            <Habilidad img={Mate} />
+            <Habilidad img={MaterialUi} />
+            <Habilidad img={Tailwind} />
             <Habilidad img={Boots} />
+            <Habilidad img={Styled} />
+            <Habilidad img={Sass} />
+           
           </div>
         </div>
         <div className="back">
@@ -54,6 +70,7 @@ const Habilidades = () => {
             <Habilidad img={Node} />
             <Habilidad img={Express} />
             <Habilidad img={Python} />
+            <Habilidad img={Jwt} />
           </div>
         </div>
         <div className="base">

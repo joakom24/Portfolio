@@ -5,6 +5,9 @@
     h3{
         font-size: 20px;
     }
+    .front-img, .back-img , .base-img, .otros-img {
+        flex-wrap: wrap;
+    }
 }
 @media  screen and (max-width: 1300px) {
     .container {
@@ -12,6 +15,9 @@
     }
     h3{
         font-size: 20px;
+    }
+    .front-img, .back-img , .base-img, .otros-img {
+        flex-wrap: wrap;
     }
 }
 @media  screen and (max-width: 1024px) {
@@ -28,6 +34,9 @@
     .otros-img {
         margin-left: 10vw;
     }
+    .front-img, .back-img , .base-img, .otros-img {
+        flex-wrap: wrap;
+    }
     
 }
 
@@ -38,18 +47,9 @@
 h3 {
     font-size: 19px;
 }
-.habilidades {
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-}
-.otros {
-    margin: 0 80px 0 0 ;
-}
-.otros h3 {
-    margin-left: 20px;
+
+.front-img, .back-img , .base-img, .otros-img {
+    flex-wrap: wrap;
 }
 
 }
-
-
